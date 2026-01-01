@@ -7,11 +7,13 @@ import { createRoot } from 'react-dom/client';
 /**
  * Internal dependencies.
  */
-import '@/styles/global.css';
-import { App } from './App.tsx'
+import './global.css';
+import { App } from './App.tsx';
+import { Toaster } from "@/components/ui/sonner";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App />
+    <Toaster />
   </StrictMode>,
 )
