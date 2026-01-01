@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import logo from '/logo.png'
-import './App.css'
 
 export const App = () => {
   const [count, setCount] = useState(0)
