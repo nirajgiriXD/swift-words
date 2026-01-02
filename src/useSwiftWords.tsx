@@ -9,7 +9,10 @@ export const useSwiftWords = () => {
   const [text, setText] = useState<string>("");
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [word, setWord] = useState<string>("");
-  const [theme, setTheme] = useState<"light" | "dark">("light");
+  const [theme, setTheme] = useState<"light" | "dark">(() => {
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    return prefersDark ? "dark" : "light";
+  });
   const [wordsPerMinute, setWordsPerMinute] = useState<number>(250);
 
   const intervalRef = useRef<number | null>(null);
