@@ -10,8 +10,7 @@ By guiding the reader’s attention to a single focal point, SwiftWords improves
 ## Features
 - Word-by-word text display (RSVP-style reading)
 - Adjustable options for reading speed (words per minute)
-- Customizable font size and style
-- Option to pause, resume, and skip words
+- Option to pause, and play words
 - Support for various text formats (plain text, articles, etc.)
 - Clean, distraction-free interface
 
