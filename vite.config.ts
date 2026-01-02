@@ -5,6 +5,7 @@ import react from "@vitejs/plugin-react";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/swift-words/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
